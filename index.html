@@ -55,8 +55,13 @@
         </form>
         <h4 class="js-greetings greetings"></h4>
         <div class="main-box">
-          <form class="search-bar" id="form">
-            <input type="search" id="search" placeholder="Search..." />
+          <form
+            action="https://www.google.com/search"
+            method="GET"
+            class="search-bar"
+            id="form"
+          >
+            <input name="q" type="search" id="search" placeholder="Search..." />
             <svg
               class="icon icon-search w-6 h-6"
               fill="none"
