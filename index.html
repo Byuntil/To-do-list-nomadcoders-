@@ -75,6 +75,9 @@
         </div>
       </div>
       <div class="main-bottom">
+        <div class="main-weather nav-item">
+          <span class="js-weather"></span>
+        </div>
         <div class="main-settings-btn main-nav-btns-right">
           <div class="nav-item">
             <svg
@@ -104,15 +107,15 @@
       <div class="main-tab-hub" style="top: -100%">
         <div class="main-tab-hub-head">
           <div class="main-tab-hub-menu">
-            <div class="main-tab-hub-menu-item">
+            <div class="main-tab-hub-menu-item" id="bookmark">
               <i class="fas fa-bookmark"></i>
               <span>Bookmarks</span>
             </div>
-            <div class="main-tab-hub-menu-item">
+            <div class="main-tab-hub-menu-item" id="todo">
               <i class="far fa-check-circle"></i>
               <span>ToDo</span>
             </div>
-            <div class="main-tab-hub-menu-item">
+            <div class="main-tab-hub-menu-item" id="note">
               <i class="fas fa-pencil-alt"></i>
               <span>Notes</span>
             </div>
@@ -150,6 +153,7 @@
   <script src="js/greeting.js"></script>
   <script src="js/hub.js"></script>
   <script src="js/setting.js"></script>
+  <script src="js/weather.js"></script>
   <script
     src="https://kit.fontawesome.com/71835e9459.js"
     crossorigin="anonymous"

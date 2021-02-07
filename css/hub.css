@@ -8,7 +8,7 @@
 }
 .main-tab-hub-head {
   width: 100%;
-  height: 7%;
+  height: 8%;
   margin: 0px;
   border-bottom: solid rgba(0, 0, 0, 0.1) 1px;
   display: flex;
@@ -45,4 +45,90 @@
 .main-tab-hub-menu-item span {
   color: rgba(0, 0, 0, 0.5);
   margin-left: 5px;
+}
+.main-tab-hub-view {
+  width: 100%;
+  height: 92%;
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bookmarks-view {
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  align-items: center;
+}
+.bookmarks-view .bookmark-box {
+  width: 11%;
+  height: 8vw;
+  padding: 10px;
+}
+.bookmark {
+  width: 100%;
+  height: 100%;
+  background-color: #efefef;
+  box-sizing: border-box;
+}
+.bookmark .bookmark-head {
+  display: flex;
+  width: 100%;
+  height: 30px;
+  box-sizing: border-box;
+  align-items: center;
+  padding: 0px 5px;
+}
+.bookmark .bookmark-body {
+  display: block;
+  width: 100%;
+  height: calc(100% - 30px);
+  background-position: center;
+  background-size: cover;
+}
+.bookmark-favicon {
+  margin-right: 5px;
+}
+.bookmark-title {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #000;
+  font-size: 12px;
+}
+.bookmark-setting-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #efefef;
+  color: #c2c2c2;
+}
+.todos-view {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.left-part {
+  height: 100%;
+  width: 24%;
+  margin: 0px;
+  padding: 20px 20px 100px 40px;
+  box-sizing: border-box;
+  border-right: solid rgba(0, 0, 0, 0.1) 1px;
+}
+.right-part {
+  height: 100%;
+  width: 76%;
+  margin: 0px;
+  padding: 20px 30px;
+  box-sizing: border-box;
+}
+.notes-view {
+  width: 100%;
+  height: 100%;
+  display: flex;
 }

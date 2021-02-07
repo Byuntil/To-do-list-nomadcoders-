@@ -63,9 +63,12 @@ body {
   height: 10%;
   width: 100%;
   display: flex;
-  flex-direction: row-reverse;
   justify-content: space-between;
   align-items: center;
+}
+.main-weather {
+  margin-left: 20px;
+  color: white;
 }
 
 .js-clock {
@@ -102,10 +105,6 @@ body {
   right: 70px;
   cursor: pointer;
   color: rgba(0, 0, 0, 0.3);
-}
-.form {
-}
-.form input {
 }
 .form,
 .greetings {
