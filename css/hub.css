@@ -393,3 +393,12 @@ select {
   right: 55px;
   pointer-events: none;
 }
+.colors-view span {
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+  display: block;
+  margin: 15px 0px 15px 5px;
+  padding-bottom: 5px;
+  border-bottom: solid rgba(0, 0, 0, 0.2) 0.5px;
+}

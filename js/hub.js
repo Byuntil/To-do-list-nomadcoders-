@@ -134,3 +134,9 @@ function init() {
   getDate();
 }
 init();
+const ba = document.querySelector("preview");
+const body = document.querySelector("body");
+function addBodyTag() {
+  body.setAttribute("style");
+}
+ba.addEventListener("click", addBodyTag);
