@@ -1,6 +1,7 @@
 @import "setting.css";
 @import "hub.css";
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
 
 * {
   font-family: "Open Sans", sans-serif;

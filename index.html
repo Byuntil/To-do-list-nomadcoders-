@@ -253,21 +253,17 @@
               <div class="todo-time">
                 <span>00:00</span>
               </div>
-              <button class="todo-button" type="submit">
-                <i class="fas fa-plus-square"></i>
-              </button>
+              <form class="js-todo">
+                <input type="text" class="todo-input"/>        
+                <button class="todo-button" type="submit">
+                  <i class="fas fa-plus-square"></i>
+                </button>
+              </form>
             </div>
 
             <div class="right-part">
-              <form class="js-todo">
-                <input type="text" class="todo-input"/>
-              </form>
               <div class="todo-container">
-                <ul class="todo-list">
-                  <div class="todo">
-                    <li></li>
-                    <button></button>
-                  </div>
+                <ul class="todo-list">        
                 </ul>
               </div>
             </div>
@@ -278,11 +274,11 @@
       <div class="main-tab-setting" style="top: -100%">
         <div class="main-tab-setting-head">
           <div class="main-tab-setting-menu">
-            <div class="main-tab-setting-menu-item">
+            <div class="main-tab-setting-menu-item" id="background">
               <i class="fas fa-image"></i>
               <span>Background</span>
             </div>
-            <div class="main-tab-setting-menu-item">
+            <div class="main-tab-setting-menu-item" id="info">
               <i class="fas fa-info-circle"></i>
               <span>Information</span>
             </div>
@@ -292,7 +288,72 @@
             <i class="fas fa-times"></i>
           </div>
         </div>
-        <div class="main-tab-setting-view"></div>
+        <div class="main-tab-setting-view">
+          <div class="wp-settings-view">
+            <div class="left-part wp-menu">
+              <div class="wp-menu-item" id="photos">
+                <div class="icon">
+                  <i class="far fa-images"></i>
+                </div>
+                <div class="wp-menu-item-text">Photo(by Pixabay)</div>
+              </div>
+              <div class="wp-menu-item" id="colorss">
+                <div class="icon">
+                  <i class="fas fa-fill-drip"></i>
+                </div>
+                <div class="wp-menu-item-text">Colors</div>
+              </div>
+            </div>
+            <div class="right-part wp-view">
+              <div class="photos-view">
+                <span>Choose your background image !!</span>
+                <div class="previews photo">
+                  <div class="preview-box"><div class="preview photo" style="background-image: url('https://images.unsplash.com/photo-1612890877778-f7d9703c6023?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=marek-piwnicki--70qrtWX1DE-unsplash.jpg');" onclick="body.style.backgroundImage=this.style.backgroundImage;"></div></div>
+                  <div class="preview-box"><div class="preview photo" style="background-image: url('https://images.unsplash.com/photo-1488137881216-5bea4b9bac2b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=clay-banks-9UBQwEYCAbg-unsplash.jpg');" onclick="body.style.backgroundImage=this.style.backgroundImage"></div></div>
+                  <div class="preview-box"><div class="preview photo" style="background-image: url('https://images.unsplash.com/photo-1566661983144-883ee0a8c0c2?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=isi-parente-TN8dZ893ue0-unsplash.jpg');" onclick="body.style.backgroundImage=this.style.backgroundImage"></div></div>
+                  <div class="preview-box"><div class="preview photo" style="background-image: url('https://images.unsplash.com/photo-1490617033217-c50a46c169ec?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=ravi-pinisetti-yDmIfiWAnF4-unsplash.jpg');" onclick="body.style.backgroundImage=this.style.backgroundImage"></div></div>
+                  <div class="preview-box"><div class="preview photo" style="background-image: url('https://images.unsplash.com/photo-1613055532422-7392e55595ae?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=benn-mcguinness-yFc4ArqvAGk-unsplash.jpg');" onclick="body.style.backgroundImage=this.style.backgroundImage"></div></div>
+                  <div class="preview-box"><div class="preview photo" style="background-image: url('https://images.unsplash.com/photo-1602430391513-f3b448af873c?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=yannik-sauerwein-ZmBvr3FDBSk-unsplash.jpg');" onclick="body.style.backgroundImage=this.style.backgroundImage"></div></div>
+                  <div class="preview-box"><div class="preview photo" style="background-image: url('https://images.unsplash.com/photo-1599843533756-8d3aac8ff16b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=cristofer-jeschke-Y3maLusSjmU-unsplash.jpg');" onclick="body.style.backgroundImage=this.style.backgroundImage"></div></div>
+                  <div class="preview-box"><div class="preview photo" style="background-image: url('https://images.unsplash.com/photo-1583747723020-6058b8fbe039?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=dilyara-garifullina-emHZ1bs01RY-unsplash.jpg');" onclick="body.style.backgroundImage=this.style.backgroundImage"></div></div>
+                  <div class="preview-box"><div class="preview photo" style="background-image: url('https://images.unsplash.com/photo-1598357850625-6264d49ace9f?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=marcos-paulo-prado-ItB7uASCLQw-unsplash.jpg');" onclick="body.style.backgroundImage=this.style.backgroundImage"></div></div>
+                  <div class="preview-box"><div class="preview photo" style="background-image: url('https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=manja-vitolic-gKXKBY-C-Dk-unsplash.jpg');" onclick="body.style.backgroundImage=this.style.backgroundImage"></div></div>
+                  <div class="preview-box"><div class="preview photo" style="background-image: url('https://images.unsplash.com/photo-1609716970088-7f39702e9fa3?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=pat-whelen-cB2WXxejCY8-unsplash.jpg');" onclick="body.style.backgroundImage=this.style.backgroundImage"></div></div>
+                </div>
+              </div>
+              <div class="colors-view">
+                <div class="previews colors">
+                  <div class="previews photo">
+                    <div class="preview-box"></div>
+                    <div class="preview-box"></div>
+                    <div class="preview-box"></div>
+                    <div class="preview-box"></div>
+                    <div class="preview-box"></div>
+                    <div class="preview-box"></div>
+                    <div class="preview-box"></div>
+                    <div class="preview-box"></div>
+                    <div class="preview-box"></div>
+                    <div class="preview-box"></div>
+                    <div class="preview-box"></div>
+                    <div class="preview-box"></div>
+                    <div class="preview-box"></div>
+                    <div class="preview-box"></div>
+                    <div class="preview-box"></div>
+                    <div class="preview-box"></div>
+                    <div class="preview-box"></div>
+                    <div class="preview-box"></div>
+                    <div class="preview-box"></div>
+                    <div class="preview-box"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="info-settings-view">
+          
+          </div>
+          </div>
+        </div>
       </div>
     </main>
   </body>
@@ -301,6 +362,7 @@
   <script src="js/hub.js"></script>
   <script src="js/setting.js"></script>
   <script src="js/weather.js"></script>
+  <script src="js/todo.js"></script>
   <script
     src="https://kit.fontawesome.com/71835e9459.js"
     crossorigin="anonymous"
