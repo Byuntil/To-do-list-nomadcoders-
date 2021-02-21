@@ -113,30 +113,3 @@ function colorsView() {
 photoBtn.addEventListener("click", photoView);
 colorsBtn.addEventListener("click", colorsView);
 */
-const todoTime = document.querySelector(".todo-time");
-const todoTimeText = todoTime.querySelector("span");
-function getDate() {
-  var date = new Date();
-  var dat = date.getDay();
-  var year = date.getFullYear();
-  var weekday = new Array(7);
-  weekday[0] = "Sunday";
-  weekday[1] = "Monday";
-  weekday[2] = "Tuesday";
-  weekday[3] = "Wednesday";
-  weekday[4] = "Thursday";
-  weekday[5] = "Friday";
-  weekday[6] = "Saturday";
-  var t = `${weekday[date.getDay()]} ${dat < 10 ? `0${dat}` : dat}, ${year}`;
-  todoTimeText.innerText = t;
-}
-
-function init() {
-  getDate();
-}
-init();
-const ba = document.querySelector("preview");
-const body = document.querySelector("body");
-function addBodyTag() {
-  body.setAttribute("style");
-}
