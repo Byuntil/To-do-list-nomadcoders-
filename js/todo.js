@@ -102,27 +102,12 @@ function removeLocalTodos(todo) {
 todoButton.addEventListener("click", addTodo);
 todoList.addEventListener("click", deleteCheck);
 document.addEventListener("DOMContentLoaded", getTodos);
-
 const todoTime = document.querySelector(".todo-time");
 const todoTimeText = todoTime.querySelector("span");
 function getDate() {
   var date = new Date();
   var dat = date.getDate();
-  var month = date.getMonth();
   var year = date.getFullYear();
-  var months = new Array(12);
-  months[0] = "Jan";
-  months[1] = "Feb";
-  months[2] = "Mar";
-  months[3] = "Apr";
-  months[4] = "May";
-  months[5] = "Jun";
-  months[6] = "Jul";
-  months[7] = "Aug";
-  months[8] = "Sep";
-  months[9] = "Oct";
-  months[10] = "Nov";
-  months[11] = "Dec";
   var weekday = new Array(7);
   weekday[0] = "Sunday";
   weekday[1] = "Monday";
@@ -131,9 +116,7 @@ function getDate() {
   weekday[4] = "Thursday";
   weekday[5] = "Friday";
   weekday[6] = "Saturday";
-  var t = `${months[`${month}`]} ${weekday[date.getDay()]} ${
-    dat < 10 ? `0${dat}` : dat
-  }, ${year}`;
+  var t = `${weekday[date.getDay()]} ${dat < 10 ? `0${dat}` : dat}, ${year}`;
   todoTimeText.innerText = t;
 }
 
