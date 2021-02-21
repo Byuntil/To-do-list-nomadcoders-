@@ -13,15 +13,10 @@ tabHub.addEventListener("click", tabHubShow);
 closeBtn.addEventListener("click", tabClose);
 
 const hubView = document.querySelector(".main-tab-hub-view");
-
 const bookmarkBtn = document.querySelector("#bookmark");
 const todoBtn = document.querySelector("#todo");
-const backgroundBtn = document.querySelector("#background");
-const infoBtn = document.querySelector("#info");
 const bookmarkView = document.querySelector(".bookmarks-view");
 const toDoView = document.querySelector(".todos-view");
-const backgroundView = document.querySelector(".wp-settings-view");
-const infoView = document.querySelector(".info-settings-view");
 
 /*
 function saveNote(){
@@ -84,59 +79,3 @@ function getDate(){
     return t;
 }
 */
-function backgroundShow() {
-  infoView.classList.remove("aI");
-  backgroundView.classList.add("aI");
-}
-function infoShow() {
-  backgroundView.classList.remove("aI");
-  infoView.classList.add("aI");
-}
-backgroundBtn.addEventListener("click", backgroundShow);
-infoBtn.addEventListener("click", infoShow);
-
-const photoBtn = document.querySelector("#photos");
-const colorsBtn = document.querySelector("#colorss");
-const photosView = document.querySelector(".photos-view");
-const coView = document.querySelector(".colors-view");
-
-function photoView() {
-  coView.classList.remove("aBa");
-  photosView.classList.add("aCa");
-}
-function colorsView() {
-  photosView.classList.remove("aCa");
-  coView.classList.add("aBa");
-}
-
-photoBtn.addEventListener("click", photoView);
-colorsBtn.addEventListener("click", colorsView);
-
-const todoTime = document.querySelector(".todo-time");
-const todoTimeText = todoTime.querySelector("span");
-function getDate() {
-  var date = new Date();
-  var dat = date.getDay();
-  var year = date.getFullYear();
-  var weekday = new Array(7);
-  weekday[0] = "Sunday";
-  weekday[1] = "Monday";
-  weekday[2] = "Tuesday";
-  weekday[3] = "Wednesday";
-  weekday[4] = "Thursday";
-  weekday[5] = "Friday";
-  weekday[6] = "Saturday";
-  var t = `${weekday[date.getDay()]} ${dat < 10 ? `0${dat}` : dat}, ${year}`;
-  todoTimeText.innerText = t;
-}
-
-function init() {
-  getDate();
-}
-init();
-const ba = document.querySelector("preview");
-const body = document.querySelector("body");
-function addBodyTag() {
-  body.setAttribute("style");
-}
-ba.addEventListener("click", addBodyTag);
