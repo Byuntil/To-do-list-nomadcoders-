@@ -146,4 +146,3 @@ const body = document.querySelector("body");
 function addBodyTag() {
   body.setAttribute("style");
 }
-ba.addEventListener("click", addBodyTag);

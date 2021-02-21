@@ -20,10 +20,3 @@ function init() {
   paintImage(randomNumber);
 }
 init();
-<<<<<<< HEAD
-
-function deleteBg() {
-  im.remove();
-}
-=======
->>>>>>> master
