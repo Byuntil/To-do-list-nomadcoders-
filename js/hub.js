@@ -84,6 +84,7 @@ function getDate(){
     return t;
 }
 */
+/*
 function backgroundShow() {
   infoView.classList.remove("aI");
   backgroundView.classList.add("aI");
@@ -111,7 +112,7 @@ function colorsView() {
 
 photoBtn.addEventListener("click", photoView);
 colorsBtn.addEventListener("click", colorsView);
-
+*/
 const todoTime = document.querySelector(".todo-time");
 const todoTimeText = todoTime.querySelector("span");
 function getDate() {
