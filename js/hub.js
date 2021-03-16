@@ -13,15 +13,10 @@ tabHub.addEventListener("click", tabHubShow);
 closeBtn.addEventListener("click", tabClose);
 
 const hubView = document.querySelector(".main-tab-hub-view");
-
 const bookmarkBtn = document.querySelector("#bookmark");
 const todoBtn = document.querySelector("#todo");
-const backgroundBtn = document.querySelector("#background");
-const infoBtn = document.querySelector("#info");
 const bookmarkView = document.querySelector(".bookmarks-view");
 const toDoView = document.querySelector(".todos-view");
-const backgroundView = document.querySelector(".wp-settings-view");
-const infoView = document.querySelector(".info-settings-view");
 
 /*
 function saveNote(){
